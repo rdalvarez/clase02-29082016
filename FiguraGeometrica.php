@@ -5,7 +5,7 @@ abstract Class FiguraGeometrica
 	protected $_superficie;
 	protected $_perimetro;
 
-	function __contruct(){}
+	function __construct(){}
 
 	public function GetColor()
 	{

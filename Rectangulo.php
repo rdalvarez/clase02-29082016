@@ -6,7 +6,7 @@ class Rectangulo extends FiguraGeometrica
 	protected $_ladoDos;//double
 	protected $_ladoUno;//double
 
-	function Rectangulo($L1, $L2) //double, double
+	function __construct($L1, $L2) //double, double
 	{
 		$this->_ladoUno = $L1;
 		$this->_ladoDos = $L2;
@@ -30,4 +30,5 @@ class Rectangulo extends FiguraGeometrica
 		return parent::ToString();
 	}
 }
+
 ?>
