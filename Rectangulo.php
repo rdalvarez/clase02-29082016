@@ -6,24 +6,28 @@ class Rectangulo extends FiguraGeometrica
 	protected $_ladoDos;//double
 	protected $_ladoUno;//double
 
-	function __contruct($L1, $L2) //double, double
+	function Rectangulo($L1, $L2) //double, double
 	{
 		$this->_ladoUno = $L1;
 		$this->_ladoDos = $L2;
+
+		$this->CalcularDatos();
 	}
 
 	protected function CalcularDatos()
 	{
-
+		$this->_superficie = ($this->_ladoUno * $this->_ladoDos);
+		$this->_perimetro = 2*($this->_ladoUno + $this->_ladoDos);
 	}
 	public function Dibujar()
 	{
-		return "string";
+		var_dump($this->_superficie);
+		var_dump($this->_perimetro);
+		return ($this->_superficie + $this->_perimetro);
 	}
 	public function ToString()
 	{
-		parent::ToString();
-		return "hola mundo";
+		return parent::ToString();
 	}
 }
 ?>

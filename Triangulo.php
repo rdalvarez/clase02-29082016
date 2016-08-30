@@ -6,7 +6,7 @@ class Triangulo extends FiguraGeometrica
 	protected $_altura;//double
 	protected $_base;//double
 
-	function __contruct($b,$h)//double, double
+	function Triangulo($b,$h)//double, double
 	{
 		$this->_altura = $b;
 		$this->_base = $h;

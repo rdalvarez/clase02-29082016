@@ -5,10 +5,7 @@ abstract Class FiguraGeometrica
 	protected $_superficie;
 	protected $_perimetro;
 
-	function __contruct()
-	{
-		
-	}
+	function __contruct(){}
 
 	public function GetColor()
 	{
@@ -22,7 +19,7 @@ abstract Class FiguraGeometrica
 
 	public function ToString() //falta que sea virtual
 	{
-		return "hola";
+		return "hola(padre)";
 	}
 
 	abstract public function Dibujar();
