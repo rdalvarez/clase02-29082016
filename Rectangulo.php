@@ -1,5 +1,5 @@
 <?php
-require_once ("Clase02/FiguraGeometrica.php");
+require_once ("FiguraGeometrica.php");
 
 class Rectangulo extends FiguraGeometrica
 {
@@ -22,7 +22,8 @@ class Rectangulo extends FiguraGeometrica
 	}
 	public function ToString()
 	{
-		return "string";
+		parent::ToString();
+		return "hola mundo";
 	}
 }
 ?>
